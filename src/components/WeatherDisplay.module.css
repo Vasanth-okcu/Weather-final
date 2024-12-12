@@ -1,0 +1,61 @@
+/* src/components/WeatherDisplay.module.css */
+.weather {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 450px;
+}
+
+.weather h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.weatherIcon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #ff7f50; /* Warm color for weather icon */
+}
+
+.error {
+  color: #ff0000;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .weather {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .weather h2 {
+    font-size: 2rem;
+  }
+
+  .weather p {
+    font-size: 1rem;
+  }
+
+  .weatherIcon {
+    font-size: 2.5rem;
+  }
+}

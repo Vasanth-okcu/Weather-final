@@ -1,0 +1,52 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* Spread navbar items horizontally */
+  align-items: center;  /* Center navbar items vertically */
+  padding: 10px 20px;
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text-color);
+  width: 100%;  /* Ensure navbar takes up full width */
+}
+
+/* Navbar in light theme */
+.navbar.light {
+  --navbar-bg: #fff;  /* Light background */
+  --navbar-text-color: #000;  /* Dark text for light theme */
+}
+
+/* Navbar in dark theme */
+.navbar.dark {
+  --navbar-bg: #333;  /* Dark background */
+  --navbar-text-color: #fff;  /* Light text for dark theme */
+}
+
+/* List of navbar items */
+.navbar-list {
+  display: flex;  /* Use flexbox to arrange items horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;  /* Ensure list takes up full width */
+  justify-content: space-between;  /* Spread items horizontally */
+}
+
+/* Style for each navbar item */
+.navbar-item {
+  margin: 0 15px;  /* Add spacing between the items */
+  font-size: 16px;
+  text-align: center;  /* Ensure text is centered within items */
+}
+
+/* Button for theme toggle */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--navbar-text-color);
+}
+
+.theme-toggle-btn:focus {
+  outline: none;
+}

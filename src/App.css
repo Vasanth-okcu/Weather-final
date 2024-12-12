@@ -1,0 +1,99 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color); /* Theme background color */
+  color: var(--text-color); /* Text color will depend on the theme */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text change */
+}
+
+/* Wrapper to center and control page width */
+.page-wrapper {
+  max-width: 1200px; /* Maximum width for content */
+  width: 100%;  /* Ensure it takes full width on smaller screens */
+  margin: 0 auto;  /* Center horizontally */
+  padding: 20px;  /* Add some padding around the content */
+}
+
+/* Light and dark theme page background and text color */
+body.light {
+  --background-color: #fff; /* Light background color */
+  --text-color: black; /* Light theme text color */
+}
+
+body.dark {
+  --background-color: #222; /* Dark background color */
+  --text-color: white; /* Dark theme text color */
+}
+
+/* Navbar Styling */
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.light {
+  background-color: #f8f9fa; /* Light navbar background */
+}
+
+.navbar.dark {
+  background-color: #333; /* Dark navbar background */
+}
+
+/* Navbar links */
+.navbar a {
+  color: var(--text-color); /* Default link color based on the theme */
+  text-decoration: none;
+  margin: 0 15px; /* Spacing between links */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+  color: var(--hover-color); /* Hover color based on theme */
+}
+
+/* Active link styles */
+.navbar a:active,
+.navbar a:focus {
+  color: var(--active-color); /* Active link color */
+}
+
+/* Light theme link hover and active colors */
+body.light .navbar a:hover {
+  --hover-color: #007bff; /* Light theme hover color */
+}
+
+body.light .navbar a:active {
+  --active-color: #0056b3; /* Light theme active color */
+}
+
+/* Dark theme link hover and active colors */
+body.dark .navbar a:hover {
+  --hover-color: #ffb74d; /* Dark theme hover color */
+}
+
+body.dark .navbar a:active {
+  --active-color: #ff9800; /* Dark theme active color */
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between; /* Add space between sections */
+  margin-top: 20px; /* Add top margin for spacing */
+}
